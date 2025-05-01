@@ -1,0 +1,61 @@
+Loaded 61 records
+Sample record: {'text': 'This car is amazing, smooth ride, and great fuel efficiency.', 'label': 'positive'}
+Connecting to Qdrant...
+
+Embedding with all-MiniLM-L6-v2...
+Batches: 100%|█████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00,  6.84it/s]
+
+Embedding with multi-qa-MiniLM-L6-cos-v1...
+Batches: 100%|█████████████████████████████████████████████████████████████████████████████████████| 2/2 [00:00<00:00,  6.82it/s]
+
+Enter a query (or type 'exit'): bad
+
+Searching with all-MiniLM-L6-v2...
+Batches: 100%|█████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  3.75it/s]
+c:\Users\brand\Downloads\final.py:51: DeprecationWarning: `search` method is deprecated and will be removed in the future. Use `query_points` instead.
+  result = client.search(
+--- sbert1 Results ---
+• Terrible performance, feels like a clunky old car.
+• Good but not great. It's a reliable car but lacks excitement.
+• Good car, but not as fast as I expected.
+
+Searching with multi-qa-MiniLM-L6-cos-v1...
+Batches: 100%|█████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  4.97it/s]
+--- sbert2 Results ---
+• Good but not great. It's a reliable car but lacks excitement.
+• Worst car I've ever bought, it keeps having mechanical issues.
+• The car is good, but I had issues with the dealership.
+
+Enter a query (or type 'exit'): good
+
+Searching with all-MiniLM-L6-v2...
+Batches: 100%|█████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  3.41it/s]
+--- sbert1 Results ---
+• Good but not great. It's a reliable car but lacks excitement.
+• Good car, but not as fast as I expected.
+• I’m not satisfied, it keeps having electrical issues.
+
+Searching with multi-qa-MiniLM-L6-cos-v1...
+Batches: 100%|█████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  4.24it/s]
+--- sbert2 Results ---
+• Good but not great. It's a reliable car but lacks excitement.
+• Good car, but not as fast as I expected.
+• I’m very pleased with this car. Excellent value for the money.
+
+Enter a query (or type 'exit'): fantastic
+
+Searching with all-MiniLM-L6-v2...
+Batches: 100%|█████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  5.26it/s]
+--- sbert1 Results ---
+• Fantastic car! Extremely comfortable and reliable.
+• I can’t recommend this car enough, it’s just fantastic!
+• Amazing fuel efficiency and a smooth drive. Love it!
+
+Searching with multi-qa-MiniLM-L6-cos-v1...
+Batches: 100%|█████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  3.19it/s]
+--- sbert2 Results ---
+• Fantastic car! Extremely comfortable and reliable.
+• Amazing fuel efficiency and a smooth drive. Love it!
+• The car is decent, but the ride is rougher than I expected.
+
+Enter a query (or type 'exit'): exit

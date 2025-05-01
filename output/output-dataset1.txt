@@ -1,0 +1,75 @@
+Loaded 6 records
+Sample record: {'text': 'I love this product! It works perfectly.', 'label': 'positive'}
+Connecting to Qdrant...
+
+Embedding with all-MiniLM-L6-v2...
+modules.json: 100%|█████████████████████████████████████████████████████████████████████████████████████| 349/349 [00:00<?, ?B/s]
+C:\Users\brand\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\huggingface_hub\file_download.py:144: UserWarning: huggingface_hub cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\brand\.cache\huggingface\hub\models--sentence-transformers--all-MiniLM-L6-v2. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the HF_HUB_DISABLE_SYMLINKS_WARNING environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+config_sentence_transformers.json: 100%|████████████████████████████████████████████████████████████████| 116/116 [00:00<?, ?B/s]
+README.md: 100%|████████████████████████████████████████████████████████████████████████████████████| 10.5k/10.5k [00:00<?, ?B/s]
+sentence_bert_config.json: 100%|██████████████████████████████████████████████████████████████████████| 53.0/53.0 [00:00<?, ?B/s]
+config.json: 100%|██████████████████████████████████████████████████████████████████████████████████████| 612/612 [00:00<?, ?B/s]
+Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: pip install huggingface_hub[hf_xet] or pip install hf_xet
+model.safetensors: 100%|████████████████████████████████████████████████████████████████████| 90.9M/90.9M [00:07<00:00, 11.7MB/s]
+tokenizer_config.json: 100%|████████████████████████████████████████████████████████████████████████████| 350/350 [00:00<?, ?B/s]
+vocab.txt: 100%|██████████████████████████████████████████████████████████████████████████████| 232k/232k [00:00<00:00, 5.78MB/s]
+tokenizer.json: 100%|█████████████████████████████████████████████████████████████████████████| 466k/466k [00:00<00:00, 11.8MB/s]
+special_tokens_map.json: 100%|██████████████████████████████████████████████████████████████████████████| 112/112 [00:00<?, ?B/s]
+config.json: 100%|██████████████████████████████████████████████████████████████████████████████████████| 190/190 [00:00<?, ?B/s]
+Batches: 100%|█████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.68it/s]
+
+Embedding with multi-qa-MiniLM-L6-cos-v1...
+modules.json: 100%|█████████████████████████████████████████████████████████████████████████████████████| 349/349 [00:00<?, ?B/s]
+C:\Users\brand\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\huggingface_hub\file_download.py:144: UserWarning: huggingface_hub cache-system uses symlinks by default to efficiently store duplicated files but your machine does not support them in C:\Users\brand\.cache\huggingface\hub\models--sentence-transformers--multi-qa-MiniLM-L6-cos-v1. Caching files will still work but in a degraded version that might require more space on your disk. This warning can be disabled by setting the HF_HUB_DISABLE_SYMLINKS_WARNING environment variable. For more details, see https://huggingface.co/docs/huggingface_hub/how-to-cache#limitations.
+To support symlinks on Windows, you either need to activate Developer Mode or to run Python as an administrator. In order to activate developer mode, see this article: https://docs.microsoft.com/en-us/windows/apps/get-started/enable-your-device-for-development
+  warnings.warn(message)
+config_sentence_transformers.json: 100%|█████████████████████████████████████████████████████████| 116/116 [00:00<00:00, 131kB/s]
+README.md: 100%|████████████████████████████████████████████████████████████████████████████████████| 11.6k/11.6k [00:00<?, ?B/s]
+sentence_bert_config.json: 100%|██████████████████████████████████████████████████████████████████████| 53.0/53.0 [00:00<?, ?B/s]
+config.json: 100%|██████████████████████████████████████████████████████████████████████████████| 612/612 [00:00<00:00, 1.05MB/s]
+Xet Storage is enabled for this repo, but the 'hf_xet' package is not installed. Falling back to regular HTTP download. For better performance, install the package with: pip install huggingface_hub[hf_xet] or pip install hf_xet
+model.safetensors: 100%|████████████████████████████████████████████████████████████████████| 90.9M/90.9M [00:07<00:00, 11.6MB/s]
+tokenizer_config.json: 100%|████████████████████████████████████████████████████████████████████████████| 383/383 [00:00<?, ?B/s]
+vocab.txt: 100%|██████████████████████████████████████████████████████████████████████████████| 232k/232k [00:00<00:00, 3.79MB/s]
+tokenizer.json: 100%|█████████████████████████████████████████████████████████████████████████| 466k/466k [00:00<00:00, 6.27MB/s]
+special_tokens_map.json: 100%|██████████████████████████████████████████████████████████████████████████| 112/112 [00:00<?, ?B/s]
+config.json: 100%|██████████████████████████████████████████████████████████████████████████████████████| 190/190 [00:00<?, ?B/s]
+Batches: 100%|█████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  3.51it/s]
+
+Enter a query (or type 'exit'): amazing
+
+Searching with all-MiniLM-L6-v2...
+Batches: 100%|█████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  4.65it/s]
+c:\Users\brand\Downloads\final.py:51: DeprecationWarning: search method is deprecated and will be removed in the future. Use query_points instead.
+  result = client.search(
+--- sbert1 Results ---
+• Absolutely amazing customer service!
+• I love this product! It works perfectly.
+• Worst purchase I've ever made.
+
+Searching with multi-qa-MiniLM-L6-cos-v1...
+Batches: 100%|█████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.31it/s]
+--- sbert2 Results ---
+• Absolutely amazing customer service!
+• It’s okay, not too bad but not great either.
+• Mediocre quality, not worth the price.
+
+Enter a query (or type 'exit'): terrible
+
+Searching with all-MiniLM-L6-v2...
+Batches: 100%|█████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 12.91it/s]
+--- sbert1 Results ---
+• It’s okay, not too bad but not great either.
+• Worst purchase I've ever made.
+• Terrible experience. The item broke after one use.
+
+Searching with multi-qa-MiniLM-L6-cos-v1...
+Batches: 100%|█████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 12.88it/s]
+--- sbert2 Results ---
+• Worst purchase I've ever made.
+• It’s okay, not too bad but not great either.
+• Absolutely amazing customer service!
+
+Enter a query (or type 'exit'): exit

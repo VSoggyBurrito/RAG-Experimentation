@@ -1,0 +1,65 @@
+2025-05-01 15:45:56.796123: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+2025-05-01 15:45:58.204396: I tensorflow/core/util/port.cc:153] oneDNN custom operations are on. You may see slightly different numerical results due to floating-point round-off errors from different computation orders. To turn them off, set the environment variable `TF_ENABLE_ONEDNN_OPTS=0`.
+WARNING:tensorflow:From C:\Users\brand\AppData\Local\Packages\PythonSoftwareFoundation.Python.3.11_qbz5n2kfra8p0\LocalCache\local-packages\Python311\site-packages\tf_keras\src\losses.py:2976: The name tf.losses.sparse_softmax_cross_entropy is deprecated. Please use tf.compat.v1.losses.sparse_softmax_cross_entropy instead.
+
+Loaded 157 records
+Sample record: {'text': 'The food was amazing and the service was great!', 'label': 'positive'}
+Connecting to Qdrant...
+
+Embedding with all-MiniLM-L6-v2...
+Batches: 100%|█████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00,  9.09it/s]
+
+Embedding with multi-qa-MiniLM-L6-cos-v1...
+Batches: 100%|█████████████████████████████████████████████████████████████████████████████████████| 5/5 [00:00<00:00,  8.83it/s]
+
+Enter a query (or type 'exit'): delicious
+
+Searching with all-MiniLM-L6-v2...
+Batches: 100%|█████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  3.39it/s]
+c:\Users\brand\Downloads\final.py:46: DeprecationWarning: `search` method is deprecated and will be removed in the future. Use `query_points` instead.
+  result = client.search(
+--- sbert1 Results ---
+• Delicious food! The flavors were vibrant, and the dessert was to die for.
+• Absolutely delicious. The steak was cooked perfectly, and the sides were amazing.
+• Wonderful meal. The steak was perfectly cooked and the sides were delicious.
+
+Searching with multi-qa-MiniLM-L6-cos-v1...
+Batches: 100%|█████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00, 11.89it/s]
+--- sbert2 Results ---
+• Absolutely delicious. The steak was cooked perfectly, and the sides were amazing.
+• Excellent meal! The flavors were incredible, and the presentation was beautiful.
+• This is my new favorite restaurant! The food was fresh and flavorful.
+
+Enter a query (or type 'exit'): wonderful
+
+Searching with all-MiniLM-L6-v2...
+Batches: 100%|█████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.57it/s]
+--- sbert1 Results ---
+• Exceptional food and wonderful service. The dessert was a highlight!
+• Wonderful meal. The steak was perfectly cooked and the sides were delicious.
+• This is my new favorite restaurant! The food was fresh and flavorful.
+
+Searching with multi-qa-MiniLM-L6-cos-v1...
+Batches: 100%|█████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  4.47it/s]
+--- sbert2 Results ---
+• Incredible food and amazing service. Highly recommend this restaurant.
+• Exceptional food and wonderful service. The dessert was a highlight!
+• A wonderful evening out! The appetizers were delicious.
+
+Enter a query (or type 'exit'): scrumptious
+
+Searching with all-MiniLM-L6-v2...
+Batches: 100%|█████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  2.87it/s]
+--- sbert1 Results ---
+• The fish was a little too salty for my liking, but everything else was good.
+• Not bad, but could have been better. The burger was a bit overcooked.
+• The meal was decent, but I was expecting better after hearing all the hype.
+
+Searching with multi-qa-MiniLM-L6-cos-v1...
+Batches: 100%|█████████████████████████████████████████████████████████████████████████████████████| 1/1 [00:00<00:00,  6.63it/s]
+--- sbert2 Results ---
+• This place has gone downhill. The food was cold, and the staff was inattentive.
+• It was alright, but I've had better. The seafood was fresh, though.
+• The fish was a little too salty for my liking, but everything else was good.
+
+Enter a query (or type 'exit'): exit
